@@ -1,0 +1,737 @@
+/* This resets all of the browser styling defaults
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+input, select {
+	vertical-align: middle;
+}
+
+/*-----------Actual Formatting------------*/
+/* These control the formatting of the text in the body */
+p {
+	font-family: Cambria;
+	line-height: 1.35em;
+	font-size: 16px;
+}
+p.imgdescription {
+	font-style: italic;
+	font-size: 12px;
+}
+.subheading {
+	font-family: Cambria;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.linktitle {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.sublinktitle {
+	text-decoration: none;
+	color: #517aba;
+}
+.white {
+	color: #FFFFFF;
+}
+.no-js {
+	margin: 20px 60px 0 0;
+	background: #FFFFFF;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+img.slide {
+	margin-left: 40px;
+}
+.slide-no-js {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+/*General layout*/
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Cambria;
+	background: #efefef url(pics/background.png) repeat top center;
+	background-image: url(pics/watermark.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	min-height: 100%;
+	width: 100%;
+	min-width: 960px;
+	position: absolute;
+}
+#container {
+	width: 100%;
+	min-width: 960px;
+	padding: 0 0 50px 0;
+	position: relative;
+	overflow: hidden;
+}
+
+/*These control the header*/
+header {
+	width: 100%;
+	min-width: 960px;
+	background: #517aba; /* Failsafe for old browsers */
+	background: -moz-linear-gradient(top,  #517aba 0%, #0b3474 50%, #0b3474 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#517aba), color-stop(50%,#0b3474), color-stop(100%,#0b3474));
+	background: -webkit-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: -o-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: -ms-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: linear-gradient(to bottom,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517aba', endColorstr='#0b3474',GradientType=0 ); /*Doesn't replicate the display, but good enough for IE 9*/
+}
+#header-wrapper {
+	margin: 0 auto 0 auto;
+	width: 950px;
+}
+#logo {
+	width: 275px;
+	height: 85px;
+	float: left;
+	z-index: 250;
+}
+
+/*These control the footer*/
+footer {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,.75);
+	width: 100%;
+	min-width: 960px;
+	height: 50px;
+	overflow: hidden;
+}
+#footer-wrapper {
+	width: 950px;
+	height: 50px;
+	margin: 0 auto 0 auto;
+	position: relative;
+	background: rgba(0,0,0,.15);
+	z-index: 300;
+}
+.footer-column {
+	font-size: 14px;
+	position: relative;
+	float: left;
+	font-family: Cambria;
+	padding: 10px;
+	width: 225px;
+	text-align: left;
+	color: #FFFFFF;
+}
+#footer-logo {
+	position: relative;
+	float: left;
+	width: 175px;
+	padding: 0 90px 0 130px;
+}
+
+/* General units for content pages */
+#wrapper {
+	min-width: 960px;
+	width: 100%;
+	text-align: left;
+}
+#background-box {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	background: rgba(0,0,0,.75);
+	height: 275px;
+	width: 100%;
+	min-width: 960px;
+}
+#page-title {
+	margin: 0 auto 10px auto;
+	width: 820px;
+	padding: 20px 80px 10px 80px;
+	font-size: 48px;
+	color: #FFFFFF;
+	z-index: 200;
+}
+#universal-box {
+	margin: 0 auto 0 auto;
+	width: 870px;
+	z-index: 200;
+}
+
+/* Topic entries boxes */
+.main-box {
+	position: relative;
+	width: 580px;
+	float: right;
+	padding: 30px;
+	margin: 0 0 10px 0;
+	background-color: #FFFFFF;
+	z-index: 200;
+	text-align: center;
+}
+.main-box img {
+	position: relative;
+	margin: 15px auto 15px auto;
+	padding: 10px;
+	background: #7394c7;
+}
+.main-box p {
+	text-align: left;
+	font-size: 16px;
+}
+.main-box div.heading {
+	color: #FFFFFF;
+	position: relative;
+	margin: -30px -30px 5px -30px;
+	width: 610px;
+	padding: 15px;
+	background: #7394c7;
+	text-align: center;
+	font-size: 24px;
+	z-index: 400;
+}
+.main-box div.section {
+	position: relative;
+	width: 540px;
+	padding: 20px;
+	background: #7394c7;
+	margin: 10px 0 0 0;
+}
+.section p, .section a {
+	color: #FFFFFF;
+	text-align: left;
+}
+.main-box div.section div.heading {
+	color: #000088;
+	position: relative;
+	margin: -10px -10px 5px -10px;
+	width: 544px;
+	padding: 8px;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+}
+.section img {
+	position: relative;
+	margin: 15px auto 15px auto;
+	padding: 10px;
+	background: #FFFFFF;
+}
+.section img.null {
+	position: relative;
+	margin: 0 auto 0 auto;
+	background: none;
+}
+
+/* These control the publications.html page*/
+.main-box div.article {
+	background: #7394c7;
+	margin: 15px 0 0 0;
+	padding: 10px;
+	text-align: left;
+}
+.article a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.article p {
+	padding: 10px 10px 5px 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+/* These control the support.html page */
+.sponsor {
+	background: #7394c7;
+	margin: 15px 0 0 0;
+	padding: 15px;
+	text-align: left;
+}
+.sponsor a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+.sponsor p {
+	padding: 10px;
+}
+.sponsor p a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: left;
+}
+
+/* These control the contact.html page */
+.contact-box {
+	position: relative;
+	width: 780px;
+	padding: 30px;
+	margin: 0 auto 10px auto;
+	background-color: #FFFFFF;
+	z-index: 200;
+	text-align: center;
+}
+.contact-box p {
+	text-align: left;
+	font-size: 16px;
+}
+.contact-box div.heading {
+	color: #FFFFFF;
+	position: relative;
+	margin: -30px -30px 5px -30px;
+	width: 810px;
+	padding: 15px;
+	background: #7394c7;
+	text-align: center;
+	font-size: 24px;
+}
+.contact-box div.section {
+	position: relative;
+	width: 740px;
+	padding: 20px;
+	background: #7394c7;
+	margin: 10px 0 0 0;
+}
+.contact-box div.section div.heading {
+	color: #000088;
+	position: relative;
+	margin: -10px -10px 5px -10px;
+	width: 744px;
+	padding: 8px;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+}
+iframe {
+	width: 680px;
+	height: 480px;
+	margin: 10px auto 0 auto;
+	padding: 30px;
+	background: rgba(0,0,0,0.5);
+}
+/* These control the column set-up in index */
+#column-wrapper {
+	width: 960px;
+	position: relative;
+	overflow: hidden;
+	margin: 10px auto 10px auto;
+}
+.column {
+	position: relative;
+	float: left;
+	width: 280px;
+	background-color: #FFFFFF;
+	padding: 15px;
+	margin: 0 5px 0 5px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	text-align: left;
+}
+.column div.heading {
+	position: relative;
+	margin: -15px -15px 5px -15px;
+	width: 280px;
+	padding: 15px;
+	background: #7394c7;
+	text-align: center;
+	z-index: 400;
+}
+.column div.heading a {
+	color: #FFFFFF;
+	font-size: 24px;
+	text-decoration: none;
+}
+.column p {
+	margin: 10px 0 45px 0;
+}
+.left-column-link {
+	position: absolute;
+	left: 5px;
+	bottom: 0px;
+	z-index: 200;
+}
+.middle-column-link {
+	position: absolute;
+	left: 325px;
+	bottom: 0px;
+	z-index: 200;
+}
+.right-column-link {
+	position: absolute;
+	right: 5px;
+	bottom: 0px;
+	z-index: 200;
+}
+.left-column-link a, .middle-column-link a, .right-column-link a {
+	width: 298px;
+	height: 20px;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #7394c7;
+	border: 1px solid #6D8DBD;
+}
+.left-column-link a:hover, .middle-column-link a:hover, .right-column-link a:hover {
+	box-shadow: inset 0 0 8px rgba(0,0,0,.15);
+	background-color: #6D8DBD;
+	border: 1px solid #6D8DBD;
+}
+.column-image-border {
+	padding: 10px;
+	margin: 10px 0 0 0;
+	background-color: #7394c7;
+	color: #000047;
+	text-align: left;
+}
+
+/* Left Navigational Bar */
+#left-nav {
+	width: 220px;
+	float: left;
+	padding: 8px 0 8px 0;
+	margin: 0 10px 0 0;
+	background: #7394c7;
+	z-index: 200;
+}
+.left-nav-link-element {
+	font-size: 18px;
+	color: #000088;
+	text-decoration: none;
+	display: block;
+}
+.left-nav-link {
+	background: #FFFFFF;
+	padding: 30px 10px 30px 10px;
+}
+.left-nav-link:hover {
+	background: #FFFFFF;
+	box-shadow: inset 0 0 3px 3px rgba(0,0,0,.2);
+	padding: 30px 10px 30px 10px;
+}
+.left-nav-link-current {
+	background: #C0C0C0;
+	padding: 30px 10px 30px 10px;
+}
+#page-locator {
+	margin: 0 auto 0 auto;
+	width: 820px;
+	color: #FFFFFF;
+	padding: 20px 0 0 40px;
+	z-index: 200;
+}
+.locator-element {
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFFFFF;
+	z-index: 200;
+}
+/* Faculty page layout */
+.person-box {
+	position: relative;
+	padding: 30px 0 10px 0;
+	margin: -7px 0 7px 0;
+	width: 580px;
+	border-top: 1px solid #000088;
+	z-index: 10;
+}
+.person-box div.name {
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	height: 20px;
+	margin: 0 0 10px 0;
+	width: 580px;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Cambria;
+	color: #000088;
+}
+.person-box img {
+	position: relative;
+	margin: 15px 10px 10px 10px;
+	padding: 10px;
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	float: left;
+}
+.person-box p {
+	margin: 10px;
+	padding: 0 10px 0 10px;
+}
+table {
+	margin: 10px auto 10px auto;
+}
+th {
+	padding: 10px 5px 10px 5px;
+	width: 250px;
+	color: #000066;
+}
+td {
+	padding: 10px 5px 10px 5px;
+	width: 250px;
+}
+.theading {
+	border-bottom: 1px solid #000066;
+}
+
+/* These control the homepage slide show */
+#slideshow {
+	min-width: 960px;
+	background: rgba(0,0,0,.75);
+	z-index: 100;
+}
+#slides {
+	position: relative;
+	margin: 0 auto 0 auto;
+	padding: 35px 0 35px 0;
+	width: 950px;
+	background: rgba(0,0,0,.15);
+	z-index: 100;
+}
+#bslides {
+	z-index: 100;
+}
+.slides_container {
+	width: 870px;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+.slides_container div.slide {
+	width: 870px;
+	height: 540px;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+#slides .next, #slides .prev {
+	position: absolute;
+	width: 40px;
+	height: 291px;
+	padding: 249px 0 0 0;
+}
+#slides .next:hover, #slides .prev:hover {
+	box-shadow: inset 0 0 8px rgba(0,0,0,.15);
+	background: #000000;
+	background: rgba(0,0,0,.075);
+}
+#slides .prev {
+	left: 0;
+	top: 35px;
+}
+#slides .next {
+	right: 0;
+	top: 35px;
+}
+.pagination {
+	position: relative;
+	margin: 12px auto -22px auto;
+	width: 100px;
+	height: 12px;
+}
+.pagination li {
+	float: left;
+	margin: 0 1px;
+	list-style: none;
+}
+.pagination li a {
+	display: block;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(pics/index/slideshow/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+.pagination li.current a {
+	background-position: 0 -12px;
+}
+.caption {
+	z-index: 500;
+	position: absolute;
+	background: #000000;
+	background: rgba(0,0,0,.5);
+	width: 870px;
+	font-size: 16px;
+	line-height: 1.5;
+	padding: 5px;
+	color: #FFFFFF;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+
+/* These control the navigational bar */
+nav li:hover ul {
+	display: block;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	position: relative;
+	float: left;
+	font-size: 24px;
+	list-style-type: none;
+	width: 135px;
+	text-align: center;
+	line-height: 61px;
+}
+nav ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+nav li a {
+	display: block;
+	padding: 12px 5px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+nav li a:focus {
+	outline: none;
+}
+nav li:first-child a {
+	border-left: none;
+}
+nav li.last a {
+	border-right: none;
+}
+nav a span {
+	display: block;
+	float: right;
+	margin-left: 5px;
+}
+nav ul ul {
+	display: none;
+	width: 100%;
+	left: 0;
+	background: #6a6a6a;
+	z-index: 900;
+}
+nav ul ul li {
+	float: none;
+}
+nav ul ul a {
+	padding: 15px;
+	border-left: none;
+	border-right: none;
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 15px;
+}
+nav {
+	background: #517aba; /* Failsafe for old browsers */
+	background: -moz-linear-gradient(top,  #517aba 0%, #0b3474 50%, #0b3474 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#517aba), color-stop(50%,#0b3474), color-stop(100%,#0b3474));
+	background: -webkit-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: -o-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: -ms-linear-gradient(top,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	background: linear-gradient(to bottom,  #517aba 0%,#0b3474 50%,#0b3474 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#517aba', endColorstr='#0b3474',GradientType=0 ); /*Doesn't replicate the display, but good enough for IE 9*/
+}
+nav li:hover {
+	background: #0b3474;
+	background: -moz-linear-gradient(top,  #0b3474 1%, #0b3474 50%, #517aba 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0b3474), color-stop(50%,#0b3474), color-stop(100%,#517aba));
+	background: -webkit-linear-gradient(top,  #0b3474 1%,#0b3474 50%,#517aba 100%);
+	background: -o-linear-gradient(top,  #0b3474 1%,#0b3474 50%,#517aba 100%);
+	background: -ms-linear-gradient(top,  #0b3474 1%,#0b3474 50%,#517aba 100%);
+	background: linear-gradient(to bottom,  #0b3474 1%,#0b3474 50%,#517aba 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3474', endColorstr='#517aba',GradientType=0 );
+}
+nav ul ul {
+	position: absolute;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	background-color: rgba(11,52,116,0.8);
+	overflow: hidden;
+}
+nav ul ul li a:hover {
+	background-color: rgba(15,56,120,.9);
+}
+nav ul ul li.last a:hover {
+	background-color: rgba(15,56,120,.9);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+nav ul ul li.last {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
