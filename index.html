@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--Future versions  have mobile support-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>ZLab</title>
+		<link rel="stylesheet" type="text/css" media="all" href="stylesheet.css" />
+		<link rel="shortcut icon" href="Pics/Logos/ZLab-favicon.ico" />
+		<link rel="apple-touch-icon" href="Pics/Logos/ZLab-apple-icon.png" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#slides').slides({
+					preload : true,
+					preloadImage : 'img/loading.gif',
+					play : 5000,
+					pause : 2500,
+					hoverPause : true,
+					animationStart : function(current) {
+						$('.caption').animate({
+							bottom : -35
+						}, 100);
+						if (window.console && console.log) {
+							// example return of current slide number
+							console.log('animationStart on slide: ', current);
+						};
+					},
+					animationComplete : function(current) {
+						$('.caption').animate({
+							bottom : 0
+						}, 200);
+						if (window.console && console.log) {
+							// example return of current slide number
+							console.log('animationComplete on slide: ', current);
+						};
+					},
+					slidesLoaded : function() {
+						$('.caption').animate({
+							bottom : 0
+						}, 200);
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+		<header>
+			<div id="header-wrapper">
+				<div id="logo">
+					<a class="linktitle" href="#"><img src="Pics/Logos/ZLab-logo.png" width="275px" alt="ZLab" /></a>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Research</a>
+							<ul>
+								<li>
+									<a href="molecules.html">Ultracold Molecules</a>
+								</li>
+								<li>
+									<a href="cooling.html">Molecular Laser Cooling</a>
+								</li>
+								<li>
+									<a href="optics.html">Nonlinear Optics</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">About ZLab</a>
+							<ul>
+								<li>
+									<a href="overview.html">ZLab at a Glance</a>
+								</li>
+								<li>
+									<a href="faculty.html">Team Members</a>
+								</li>
+								<li>
+									<a href="publications.html">Publications</a>
+								</li>
+								<li class="last">
+									<a href="support.html">Sponsor Support</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Resources</a>
+							<ul>
+								<li>
+									<a href="positions.html">Open Positions</a>
+								</li>
+								<li class="last">
+									<a href="academics.html">Academics</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div id="container">
+			<div id="slideshow">
+				<div id="slides">
+					<div class="slides_container">
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-1.jpg" width="870" alt="Group photo"></a>
+							<div class="caption" style="bottom:0">
+								October 25, 2022.  Clockwise from top left:  Qi Sun, Isaac Pope, Mateusz Borkowski, Jinyu Dai, Brandon Iritani, Emily Tiberi, <br>Perry Zhou, Tanya Zelevinsky, Debayan Mitra.  Not pictured:  Jianhui Li.
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#" ><img src="Pics/index/Slideshow/slide-2.jpg" width="870" alt="Photo-fragmentation"></a>
+							<div class="caption">
+								Photodissociated ultracold diatomic molecules
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-3.jpg" width="870" alt="Quantum photodissociation"></a>
+							<div class="caption">
+								Images and simulations of quantum photodissociation
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-4.jpg" width="870" alt="Laser-cooled atoms behind window"></a>
+							<div class="caption">
+								Laser-cooled atom cloud in a vacuum chamber
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-5.jpg" width="870" alt="Laser cooling light"></a>
+							<div class="caption">
+								Blue light for atom cooling and trapping
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-6.jpg" width="870" alt="Trap trace analysis system"></a>
+							<div class="caption">
+								Trace analysis setup for noble-gas dark matter detectors
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-7.jpg" width="870" alt="Ultracold molecule machine"></a>
+							<div class="caption">
+								Ultracold molecule experiment
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-8.jpg" width="500" alt="Molecule explosion"></a>
+							<div class="caption">
+								An exploding diatomic molecule
+							</div>
+						</div>
+						<div class="slide">
+							<a href="#"><img src="Pics/index/Slideshow/slide-9.jpg" width="870" alt="Red laser beams"></a>
+							<div class="caption">
+								Red laser beams propagating through the air
+							</div>
+						</div>
+					</div>
+					<a href="#" class="prev"><img src="Pics/index/Slideshow/arrow-prev.png" width="24" height="42" alt="Arrow Prev"></a>
+					<a href="#" class="next"><img src="Pics/index/Slideshow/arrow-next.png" width="24" height="42" alt="Arrow Next"></a>
+					<noscript>
+						<img class="bslide" src="Pics/index/Slideshow/slide-1.jpg" width="870" height="540" alt="Group photo" />
+						<div class="slide-no-js">
+							Please enable Javascript for more content!
+						</div>
+					</noscript>
+				</div>
+			</div>
+			<div id="column-wrapper">
+				<div class="column">
+					<div class="heading">
+						<a href="molecules.html">Diatomic Lattice Clock</a>
+					</div>
+					<div class="column-image-border">
+						<img src="Pics/index/TwoPhotonDoublyExcitedPDAMovie.gif" width="260" alt="Ultracold molecule fragmentation" />
+					</div>
+					<p>
+						Matter near absolute zero has fascinating properties.  Ultracold atoms and molecules can be confined in tiny regions of space and studied with great precision.  At ZLab, we use laser light to create ultracold diatomic molecules of strontium.  These molecules in an optical lattice allow us to measure subtle yet important properties of molecular quantum physics and chemistry.  On a more fundamental level, the molecules provide an ensemble of tiny clocks where the vibrations determine the ticking rate.  This type of quantum clock can help us test molecular quantum electrodynamics, the constancy of fundamental constants, and possible non-Newtonian forces at the nanometer scale.
+					</p>
+				</div>
+				<div class="column">
+					<div class="heading">
+						<a href="cooling.html">Laser Cooling of Molecules</a>
+					</div>
+					<div class="column-image-border">
+						<img src="Pics/index/BaHFig.png" width="260" alt="Cryogenic molecular beam" />
+					</div>
+					<p>
+						Ultracold polar molecules have many applications from modeling strongly interacting quantum systems to producing exotic atomic gases via dissociation.  At ZLab, we are exploring ways to directly cool molecules in order to manipulate and study them.  We use a combination of buffer gas cooling and laser cooling with the goal of creating a magneto-optical trap for a new type of diatomic molecule, barium monohydride.  One exciting possibility is to precisely break the bond between the barium and hydrogen to obtain ultracold fragments.  Dilute ultracold hydrogen would be the most fundamental atomic system for studying a wide range of fundamental physics.
+					</p>
+				</div>
+				<div class="column">
+					<div class="heading">
+						<a href="optics.html">Table-Top Particle Physics</a>
+					</div>
+					<div class="column-image-border">
+						<img src="Pics/index/TlFCartoon1.jpg" width="260" alt="Atom trap trace analysis system" />
+					</div>
+					<p>
+						We are collaborating with Yale University and University of Massachusetts to use cold diatomic molecules and optical techniques to measure time-reversal
+						symmetry violation in atomic nuclei (Cold Molecule Nuclear Time Reversal Experiment, or CeNTREX).  Recently, in collaboration with the Laboratory for Astrophysics we built an apparatus to quantify
+						a tiny contamination of a noble-gas detector used in dark matter searches.  In another interdisciplinary project, we used microcavities to stabilize lasers for next-generation portable atomic clocks.
+					</p>
+				</div>
+				<div class="left-column-link">
+					<a href="molecules.html">Read More</a>
+				</div>
+				<div class="middle-column-link">
+					<a href="cooling.html">Read More</a>
+				</div>
+				<div class="right-column-link">
+					<a href="optics.html">Optics</a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-wrapper">
+				<div id="footer-logo">
+					<a href="http://www.columbia.edu/"><img src="Pics/Logos/Columbia-logo.png" height="50px" alt="ZLab" /></a>
+				</div>
+				<div class="footer-column">
+					Pupin Hall, Room 632.
+					<br />
+					Phone: (212) 851-0192.
+				</div>
+				<div class="footer-column">
+					538 West 120th Street
+					<br />
+					New York, NY 10027-5255.
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
