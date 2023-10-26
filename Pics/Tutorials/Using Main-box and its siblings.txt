@@ -1,0 +1,58 @@
+
+"Main-box" (and its sibling "Contact-box") are used on almost every page to create new topics. There are only used
+when encapsulated by the "wrapper" div tags. Here is an example from molecules.html of how "Main-box" is used:
+------------------------------------
+<body>
+   <div id="container">
+      <div id="wrapper">
+         <!--Beginning of main-box-->
+         <div class="main-box">
+            <div class="heading">
+               Optical Lattice
+            </div>
+            <img src="Pics/Lattice.jpg" width="350px" alt="Optical lattice" />
+            <p>
+               When the atoms are cooled to near the absolute zero, they get trapped in an interference pattern of light.
+               This trap is called an optical lattice due to its perfectly repetitive pattern.  When the trap light is shined along one
+               direction, the lattice sites are flat as pancakes.  Along the short dimension of the pancakes, the atoms
+               experience minimal motion.  We choose this direction for probing them, to maximize the degree of precision
+               and control.
+            </p>
+         </div>
+         <!--End of main-box-->
+      </div>
+   </div>
+</body>
+------------------------------------
+Main-box begins with the heading:
+
+<div class="heading">
+   Optical Lattice
+</div>
+
+This is the section with the blue background at the top of the box. Following the heading are paragraphs and images.
+In the new version of the website, <p> will automatically space and format itself when used inside a main-box
+class <div> tag, meaning no extra <br />s are necessary. <img> will also automatically center itself and generate the
+blue border around the image.
+
+<img src="Pics/Lattice.jpg" width="350px" alt="Optical lattice" />
+<p>
+   When the atoms are cooled to near the absolute zero, they get trapped in an interference pattern of light.
+   This trap is called an optical lattice due to its perfectly repetitive pattern.  When the trap light is shined along one
+   direction, the lattice sites are flat as pancakes.  Along the short dimension of the pancakes, the atoms
+   experience minimal motion.  We choose this direction for probing them, to maximize the degree of precision
+   and control.
+</p>
+
+To create a new main-box, copying an old one and switching out the content is the easiest method. Here is a template:
+------------------------------------
+<div class="main-box">
+	<div class="heading">
+		This is the Name of the Topic
+	</div>
+	<img src="[the image directory goes here]" width="[size]px" alt="[Alternate text in case the image doesn't display]" />
+	<p>
+		Description of the topic goes here.
+	</p>
+</div>
+------------------------------------

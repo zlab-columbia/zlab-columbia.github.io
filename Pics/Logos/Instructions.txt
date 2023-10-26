@@ -1,0 +1,16 @@
+
+Columbia-logo: 375px by 100px
+
+ZLab-logo: 1100px by 340px 
+
+Important: Please use these larger dimensions instead of
+the dimensions to which the website scales them. These high 
+resolution images are needed to combat pixelation issues 
+with high DPI displays (i.e. 4K UHD monitor).
+
+Note:
+Although the website will autoscale any images, loading 
+times are reduced if they are already scaled properly. 
+Please scale according to the following guide given in
+("width" by "height"). PNG is prefered over JPG and other 
+formats.

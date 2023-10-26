@@ -1,0 +1,13 @@
+
+Slide dimensions: 870px by 540px
+
+Arrow dimensions: 24px by 42px
+
+Pagination dimenions: 12px by 24px
+
+Note:
+Although the website will autoscale any images, loading 
+times are reduced if they are already scaled properly. 
+Please scale according to the following guide given in
+("width" by "height"). PNG is prefered over JPG and other 
+formats.

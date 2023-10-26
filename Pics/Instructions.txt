@@ -1,0 +1,16 @@
+
+Prefered scale: 2x by 2y 
+(where the image is set to be "x" by "y" on the website)
+
+Important: Please use the prefered scale if possible. These high 
+resolution images are needed to combat pixelation issues 
+with high DPI displays (i.e. 4K UHD monitor).
+
+Note:
+Although the website will autoscale any images, loading 
+times are reduced if they are already scaled properly. 
+Please scale according to the following guide given in
+("width" by "height"). HTML's rescaling code is very crude
+and will cause issues when the new resolution is not an 
+divisor of the old resolution. For example 720 x 480 rescaled
+by HTML to 600 x 360 will cause unnecessary pixelation).
